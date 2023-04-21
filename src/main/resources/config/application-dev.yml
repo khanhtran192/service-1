@@ -26,6 +26,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
 
 spring:
   devtools:
@@ -47,9 +49,9 @@ spring:
       # it can be set to any label, branch or commit of the configuration source Git repository
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mariadb://localhost:3306/Service1?useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mariadb://localhost:3306/demo3?useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password:
+    password: 19022001
     hikari:
       poolName: Hikari
       auto-commit: false
